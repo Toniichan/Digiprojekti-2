@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="kyselysovellus.css">
+<title>Viikottainen projektikysely</title>
+    
+<!-- seurantascripti -->    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86726434-1', 'auto');
+  ga('send', 'pageview');
+
+</script> 
+</head>
+    
+<body>
+<h2>Viikottainen projektikysely</h2>
+<p>Miten tämä viikko sujui projektin parissa? (HTML-lomakkeen vastaukset eivät tallennu mihinkään)</p>
+<p id="bold">*-merkityt kohdat ovat pakollisia</p><br>
+    
+<form> 
+    <div id="questions">
+    
+    <h4>Oletko tyytyväinen tehtävääsi projektissa?*</h4>
+    <input type="radio" name="Q1" value="yes" checked> Kyllä, olen tyytyväinen <br>
+    <input type="radio" name="Q1" value="somewhat content"> Olen melko tyytyväinen <br>
+    <input type="radio" name="Q1" value="somewhat discontent"> Olen melko tyytyväinen <br>
+    <input type="radio" name="Q1" value="no"> Ei, en ole tyytyväinen <br>
+    <input type="radio" name="Q1" value="indifferent"> Minulla ei erityistä mielipidettä asiasta<br> 
+        
+    <h4>Tehtäväsi projektissa*</h4>
+    <input type="text" name="role" value="Tehtävänimikkeesi"> <br>
+        
+    <h4>Etenikö projekti aikataulun mukaisesti tällä viikolla?*</h4>
+    <input type="radio" name="Q2" value="yes" checked> Kyllä <br>
+    <input type="radio" name="Q2" value="no"> Ei <br> 
+        
+    <h4>Vapaa sana aikataulusta tällä viikolla</h4>
+    <textarea name="scheduling" rows="10" cols="50"></textarea>
+    
+    <h4>Koetko, että ryhmäsi on tarpeeksi tuottelias?*</h4>
+    <input type="radio" name="Q3" value="yes" checked> Kyllä <br>
+    <input type="radio" name="Q3" value="no"> En <br>
+        
+    <h4>Vapaa sana ryhmän toiminnasta tällä viikolla</h4> 
+    <textarea name="productivity" rows="10" cols="50"></textarea>    
+
+    <h4>Onko ryhmässäsi sinusta tarpeeksi yhteydenpitoa?*</h4>
+    <input type="radio" name="Q4" value="yes" checked> On <br>
+    <input type="radio" name="Q4" value="no"> Ei ole <br>
+    
+    <h4>Vapaa sana ryhmän yhteydenpidosta tällä viikolla</h4>
+    <textarea name="communication" rows="10" cols="50"></textarea>
+    
+    <h4>Piditkö enemmän Google Forms-kyselystä, vai html-kyselystä?*</h4>
+    <input type="radio" name="Q5" value="google forms" checked> Google Forms<br>
+    <input type="radio" name="Q5" value="html" > Html<br>
+</div>
+        
+</form><br><br>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetRInZooC5RMTBuoy558Ji_SAO_cjS12RyjNDWKSWkGRCvBA/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Ladataan...</iframe><br>    
+
+</body>
+</html>
