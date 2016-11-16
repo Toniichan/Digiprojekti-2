@@ -1,0 +1,5 @@
+Sovelluksen tarkoituksena on kerätä dataa tietyn opintojakson sisällöstä. Kyselyn vastaajina toimivat opiskelijat. 
+Kyselyn avatessaan käyttäjä vastaa kysymyksiin anonyymisti. Kysymykset koskevat vastaajan taitotasoa, opetuksen laatua, 
+mielipidettä opintojakson rakenteesta ja opintojakson sisällön määrää ja laatua. 
+Palvelu tarjoaa kyselyn ylläpitäjälle mahdollisuuden kirjautua palveluun, jolloin kysyjällä on kysymysten lisäämiseen, 
+poistamiseen ja muokkaamiseen tarvittavat admin-oikeudet. 
