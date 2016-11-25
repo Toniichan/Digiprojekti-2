@@ -36,6 +36,29 @@
           ga('send', 'pageview');
         </script>
     <!--seurantascripti päättyy-->
+          
+    <!-- Ykköskysymyksen nouto -->
+
+    <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+			
+               $.getJSON('http://proto435.haaga-helia.fi:8080/Feedback/queries/39/', function(jd) {
+                 // alert("vastaus tuli: jd.queryn arvon: "+jd.query);
+                   $('#stage').html('<h3> ' + jd.query + '</h3>');
+                  $('#stage').append('<input type="radio" id="1"> ' + jd.options[0].optionValue + '<br>');
+                  $('#stage').append('<input type="radio" id="2"> ' + jd.options[1].optionValue + '<br>');
+                  // $('#stage').append('<input type="radio">' + jd.vastaus3 + '<br>');
+                  //$('#stage').append('<input type="radio">' + jd.vastaus4 + '<br>');
+            });
+				
+         });
+      </script>
+
+          
+          
       </head>
 
 <!--Body alkaa-->
@@ -53,12 +76,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="../html/index.html">Kysely</a>
+      <a class="navbar-brand" href="index.html">Kyselyyn</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 
           <ul class="nav navbar-nav navbar-right">
-      <li><a href="../html/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
     </ul>
     </div>
   </div>
@@ -75,13 +98,19 @@ Tämä kysely täytetään kerran viikossa</p><br><br>
 <form>
     <div id="questions">
         
-    <h2>Lähtotaso</h2>
+    <h2>Lähtötaso</h2>
         
-    <h4>Osasitko koodata sujuvasti ennenkuin siirryit Digiprojekti-kurssille?*</h4>
+    <div id = "stage">
+         
+    </div>  
+        
+  <!-- Kysymys 1:
+    <h4 id="otsikko">Osasitko koodata sujuvasti ennenkuin siirryit Digiprojekti-kurssille?*</h4>
     <input type="radio" name="Q1" value="1" checked> Osasin koodata sujuvasti <br>
     <input type="radio" name="Q1" value="2"> Osasin koodata jotenkuten <br>
     <input type="radio" name="Q1" value="3"> Osasin koodata välttävästi <br>
-    <input type="radio" name="Q1" value="4"> En osannut koodata <br>
+    <input type="radio" name="Q1" value="4"> En osannut koodata <br> 
+    -->
 
     
 </div>
@@ -89,7 +118,7 @@ Tämä kysely täytetään kerran viikossa</p><br><br>
 <!-- Kyselyosuus päättyy-->
 
       
-<!-- JSON -->
+<!-- JSON 
     <script>
         var Handler = function(data) {
               this.data = data;
@@ -123,6 +152,6 @@ Tämä kysely täytetään kerran viikossa</p><br><br>
 
             console.log(handler.data);
         </script>
-<!-- JSON päättyy -->
+JSON päättyy -->
 </body>
 </html>

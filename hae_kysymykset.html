@@ -5,13 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Taitoselvitys</title>
+        <title>Hae Kysymykset</title>
 
-        <!-- Bootstrap -->
+        <!-- Linkitykset -->
 
-          <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-          <link rel="stylesheet" type="text/css" href="css/ownstyle.css">
-          <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+            <link rel="stylesheet" type="text/css" href="css/ownstyle.css">
+            <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,22 +26,13 @@
         <script src="../js/bootstrap.min.js"></script>
 
 
-
-     <!-- seurantascripti -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-86726434-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-     </head>
+</head>
 
 
 <body>
-<!--Navbar-->
+    
+<!-- Navigointi -->
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -50,42 +41,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Kyselyyn</a>
+      <a class="navbar-brand" href="menu.html">Menu</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
 
           <ul class="nav navbar-nav navbar-right">
-      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Kirjaudu ulos</a></li>
     </ul>
     </div>
   </div>
 </nav>
+<!-- Navigointi päättyy -->
 
-    
-    
-<div id="kirjautuminen">
-<form>
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email" style=max-width:400px;>
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd" style=max-width:400px;>
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-<!--Navbar-->
+<h1>Hae Kysymykset</h1>
 
-
-<a href="menu.html">
-   <input type="button" value="Submit" />
-</a>
-
-
-</form>
+<div class="form-group">
+  <label for="usr">Kysymyksen Tunnus:</label>
+  <input type="text" class="form-control" id="usr" style=max-width:400px;>
 </div>
+<div class="form-group">
+  <label for="pwd">Hae Kysymys:</label>
+  <input type="password" class="form-control" id="pwd" style=max-width:400px;>
+  <input type="button" value="Hae" />
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
