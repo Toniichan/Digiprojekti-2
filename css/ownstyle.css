@@ -4,15 +4,23 @@ a{
 }
 
 
-
-
+label{
+    font-family: 'Raleway', sans-serif;
+}
 
 
 
 body{
-    background-image: url(http://i.imgur.com/sKV54PO.jpg);
+    font-family: 'Raleway', sans-serif;
+    background-image: url(http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background.jpg);
     margin-top: 80px;
-
+    border: 8px solid #000;
+    -moz-border-bottom-colors:#191926 #32323e #4c4c57 #66666f #7f7f87 #99999f #b2b2b7 #cccccf;
+    -moz-border-top-colors:#191926 #32323e #4c4c57 #66666f #7f7f87 #99999f #b2b2b7 #cccccf;
+    -moz-border-left-colors:#191926 #32323e #4c4c57 #66666f #7f7f87 #99999f #b2b2b7 #cccccf;
+    -moz-border-right-colors:#191926 #32323e #4c4c57 #66666f #7f7f87 #99999f #b2b2b7 #cccccf;
+    padding: 5px 5px 5px 15px;
+    width: 80%;
 
 }
 
@@ -33,7 +41,8 @@ body{
 
 p{
     font-size: 15px;
-    color: darkturquoise;
+    color: black;
+    font-family: 'Raleway', sans-serif;
 }
 
 .myself{
@@ -84,14 +93,21 @@ textarea {
 
 body {
     background-color: #F5F5F5;
-    color: aliceblue !important;
+    color: black !important;
+    max-width:80%;
+    margin-left:5%;
+    margin-right:5%;
+    padding-left:2%;
+    padding-right:5%;
+    padding-top:10px;
+    padding-bottom:15px;
 }
 
 
 
 h2, p {
     text-align: center;
-    color: aliceblue;
+    color: black;
 }
 
 #questions {
@@ -103,7 +119,7 @@ h2, p {
 }
 
 html{
-    background-image: url(http://i.imgur.com/sKV54PO.jpg)
+    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/09/Download-Free-All-White-Background.jpg)
 }
 
 
