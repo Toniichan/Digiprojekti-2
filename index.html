@@ -45,7 +45,7 @@
       <script type = "text/javascript" language = "javascript">
          $(document).ready(function() {
 			
-               $.getJSON('http://proto435.haaga-helia.fi:8080/Feedback/queries/39/', function(jd) {
+               $.getJSON('http://proto435.haaga-helia.fi:8080/Feedback/queries/3', function(jd) {
                  // alert("vastaus tuli: jd.queryn arvon: "+jd.query);
                    $('#stage').html('<h3> ' + jd.query + '</h3>');
                   $('#stage').append('<input type="radio" id="1"> ' + jd.options[0].optionValue + '<br>');
